@@ -1,0 +1,47 @@
+_repo: A-Journey-into-the-Interior-of-the-Earth_3748
+alternative_title: Voyage au centre de la terre. English
+contributor:
+  translator:
+    agent_name: Malleson, F. A. (Frederick Amadeus)
+    alias: Malleson, Frederick Amadeus
+    birthdate: 1819
+    deathdate: 1897
+    gutenberg_agent_id: '35271'
+    url: http://www.gutenberg.org/2009/agents/35271
+creator:
+  author:
+    agent_name: Verne, Jules
+    aliases:
+    - "Verne, Jules Gabri\xEBl"
+    - Verne, Jules Gabriel
+    - "Verne, J\xFAlio"
+    birthdate: 1828
+    deathdate: 1905
+    gutenberg_agent_id: '60'
+    url: http://www.gutenberg.org/2009/agents/60
+    wikipedia:
+    - http://en.wikipedia.org/wiki/Jules_Verne
+    - http://fr.wikipedia.org/wiki/Jules_Verne
+    - "http://pt.wikipedia.org/wiki/J\xFAlio_Verne"
+description: "Date of origin in French, 1864.\r\nSee also PG#18857 for the common\
+  \ English re-write version, The Journey to the Centre of the Earth."
+gutenberg_bookshelf:
+- Best Books Ever Listings
+- Science Fiction
+gutenberg_issued: '2003-02-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '3748'
+language: en
+publication_note: 'London :  Ward, Lock, &Co., Ltd.,  1877'
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- '!lcsh:Earth (Planet) -- Core -- Fiction'
+- '!lcc:PQ'
+- '!lcsh:Voyages, Imaginary -- Fiction'
+- '!lcsh:Adventure stories'
+- '!lcsh:Science fiction'
+title: A Journey into the Interior of the Earth
+url: http://www.gutenberg.org/ebooks/3748
