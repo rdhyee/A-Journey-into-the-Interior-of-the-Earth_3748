@@ -8,6 +8,12 @@ contributor:
     deathdate: 1897
     gutenberg_agent_id: '35271'
     url: http://www.gutenberg.org/2009/agents/35271
+covers:
+- attribution: Ed Gaither - Modern Electrographic, 2015
+  cover_type: original
+  image_path: cover.jpg
+  rights: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+  rights_url: https://creativecommons.org/licenses/by-nc/4.0/
 creator:
   author:
     agent_name: Verne, Jules
