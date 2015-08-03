@@ -1,4 +1,5 @@
 _repo: A-Journey-into-the-Interior-of-the-Earth_3748
+_version: 0.0.1
 alternative_title: Voyage au centre de la terre. English
 contributor:
   translator:
@@ -39,10 +40,11 @@ gutenberg_type: Text
 identifiers:
   gutenberg: '3748'
 language: en
+publication_date: '2015-08-01'
 publication_note: 'London :  Ward, Lock, &Co., Ltd.,  1877'
-publisher: Project Gutenberg
-rights: Public domain in the USA.
-rights_url: http://creativecommons.org/about/pdm
+publisher: Recovering the Classics
+rights: CC BY-NC
+rights_url: http://creativecommons.org/licenses/by-nc/4.0/
 subjects:
 - '!lcsh: Earth (Planet) -- Core -- Fiction'
 - '!lcsh: Adventure stories'
