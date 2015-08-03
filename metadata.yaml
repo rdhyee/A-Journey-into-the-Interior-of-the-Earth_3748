@@ -19,8 +19,8 @@ creator:
     agent_name: Verne, Jules
     aliases:
     - Verne, Jules Gabriel
-    - Verne, Júlio
     - Verne, Jules Gabriël
+    - Verne, Júlio
     birthdate: 1828
     deathdate: 1905
     gutenberg_agent_id: '60'
@@ -32,8 +32,8 @@ creator:
 description: "Date of origin in French, 1864.\r\nSee also PG#18857 for the common\
   \ English re-write version, The Journey to the Centre of the Earth."
 gutenberg_bookshelf:
-- Science Fiction
 - Best Books Ever Listings
+- Science Fiction
 gutenberg_issued: '2003-02-01'
 gutenberg_type: Text
 identifiers:
@@ -44,10 +44,10 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcc:PQ'
-- '!lcsh:Voyages, Imaginary -- Fiction'
-- '!lcsh:Adventure stories'
-- '!lcsh:Science fiction'
-- '!lcsh:Earth (Planet) -- Core -- Fiction'
+- '!lcsh: Earth (Planet) -- Core -- Fiction'
+- '!lcsh: Adventure stories'
+- '!lcsh: Voyages, Imaginary -- Fiction'
+- '!lcc: PQ'
+- '!lcsh: Science fiction'
 title: A Journey into the Interior of the Earth
 url: http://www.gutenberg.org/ebooks/3748
