@@ -1,0 +1,32 @@
+language: ruby
+before_install:
+- gem install asciidoctor tilt
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
+  -d book book.asciidoc -o book.html
+- git clone https://github.com/gitenberg-dev/HTMLBook
+- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
+- cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
+- cp cover.jpg OEBPS/cover.jpg
+- if test -d "./images"; then mv ./images ./OEBPS/ ;fi
+- zip -rX book.epub mimetype
+- zip -rX book.epub OEBPS/ META-INF/
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
+- mv book.epub A-Journey-into-the-Interior-of-the-Earth.epub
+branches:
+  only:
+  - master
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: o0Uvad2AnFe/i7Tpm6XMGES1qwNghS9TlspCDMEbVUKUdIe49BFl0mRstB/G5uhnU+u1TWyVciXbqdwlj58ka0N1rTPm01QSFPmHyir0XmGOatZbjwExqHPtQ3kqs5yWxo+7ucmo/lTZcuciYpfWWbmHlnsIxsh7ljARCjBJUDkwoMWBtcgsMhXmRAQvGlqARlDY0CpOfvWYS0rdvBA74JODMQbQY8QNkB2kEMOlLkfnoMFGe5oTSy8GySlISIDFKfbyDYDeDwRlGM2Df+jADB5swv6d4sXRytFhNxmNS8OI896xHSM96aqqgWNSgrFCZWwlXL2N0LrF+TsE1YnkWGX5F5OKP9DxYi8sk3mDulEgLRJ43Frz5TVppUA7EtKxz/znKZHxdoxydMEDVYo0iyYolKTuDXl6+YpI4YVj97MH/fQyRBOLU/aLErnxXobi7M6/GgpdG5+HcPd7Br3rhEgGUrRsJns7LzGCzkko/wIf3AhxuYtEYdYaqeZMLr/5s13IrlR7iuaUF3t8pWq1X9hpHa+v/B6umkDKTbkWiqBBstaF6q4SIdOUWuzdBBhNHLP5guyPDppybc45MAe/C53/kCJqPyYJ0MIZ3e7l6Q/von5azuEJswe30WestE+iNO3SbDIRMG7MFFz/rNROq075NrZ3oTdFOgHRrPv2VMU=
+  file: A-Journey-into-the-Interior-of-the-Earth.epub
+  "on":
+    repo: GITenberg/A-Journey-into-the-Interior-of-the-Earth_3748
+addons:
+  apt:
+    packages:
+    - xsltproc
