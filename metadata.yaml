@@ -1,5 +1,5 @@
 _repo: A-Journey-into-the-Interior-of-the-Earth_3748
-_version: 0.0.2
+_version: 0.1.0
 alternative_title: Voyage au centre de la terre. English
 contributor:
   translator:
@@ -51,5 +51,6 @@ subjects:
 - '!lcsh: Voyages, Imaginary -- Fiction'
 - '!lcc: PQ'
 - '!lcsh: Science fiction'
+- GITenberg
 title: A Journey into the Interior of the Earth
 url: http://www.gutenberg.org/ebooks/3748
